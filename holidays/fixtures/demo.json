@@ -1,0 +1,100 @@
+[
+{
+    "fields": {
+        "description": "Portugal Holidays",
+        "parent": null
+    },
+    "model": "holidays.group",
+    "pk": "PT"
+},
+{
+    "fields": {
+        "group": "PT",
+        "description": "Natal",
+        "parameters": "25,12",
+        "method": "fixed_date"
+    },
+    "model": "holidays.rule",
+    "pk": 1
+},
+{
+    "fields": {
+        "group": "PT",
+        "description": "Dia de Ano Novo",
+        "parameters": "1,1",
+        "method": "fixed_date"
+    },
+    "model": "holidays.rule",
+    "pk": 2
+},
+{
+    "fields": {
+        "group": "PT",
+        "description": "Dia da Liberdade",
+        "parameters": "25,4",
+        "method": "fixed_date"
+    },
+    "model": "holidays.rule",
+    "pk": 3
+},
+{
+    "fields": {
+        "group": "PT",
+        "description": "Dia do Trabalhador",
+        "parameters": "1,5",
+        "method": "fixed_date"
+    },
+    "model": "holidays.rule",
+    "pk": 7
+},
+{
+    "fields": {
+        "group": "PT",
+        "description": "Dia de Portugal",
+        "parameters": "10,6",
+        "method": "fixed_date"
+    },
+    "model": "holidays.rule",
+    "pk": 4
+},
+{
+    "fields": {
+        "group": "PT",
+        "description": "Assunção de Nossa Senhora",
+        "parameters": "15,8",
+        "method": "fixed_date"
+    },
+    "model": "holidays.rule",
+    "pk": 5
+},
+{
+    "fields": {
+        "group": "PT",
+        "description": "Dia da Imaculada Conceição",
+        "parameters": "8,12",
+        "method": "fixed_date"
+    },
+    "model": "holidays.rule",
+    "pk": 6
+},
+{
+    "fields": {
+        "group": "PT",
+        "description": "Domingo de Páscoa",
+        "parameters": "EASTER_WESTERN",
+        "method": "easter_sunday"
+    },
+    "model": "holidays.rule",
+    "pk": 8
+},
+{
+    "fields": {
+        "group": "PT",
+        "description": "Sexta-Feira Santa",
+        "parameters": "2,8",
+        "method": "n_days_before_rule"
+    },
+    "model": "holidays.rule",
+    "pk": 9
+}
+]
