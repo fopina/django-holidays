@@ -96,5 +96,23 @@
     },
     "model": "holidays.rule",
     "pk": 9
+},
+{
+    "fields": {
+        "description": "Porto (Portugal) Holidays",
+        "parent": "PT"
+    },
+    "model": "holidays.group",
+    "pk": "PT-PRT"
+},
+{
+    "fields": {
+        "group": "PT-PRT",
+        "description": "Dia de São João",
+        "parameters": "24,6",
+        "method": "fixed_date"
+    },
+    "model": "holidays.rule",
+    "pk": 10
 }
 ]

@@ -13,14 +13,14 @@ def list_rules():
 
 
 def is_holiday(group, date):
-    ret = False
     g = holidays.models.Group.objects.get(pk=group)
-    for r in g.rule_set.all():
-        f = getattr(rules, r.method, None)
-        if f is None:
-            continue
-        ret = f(date, *r.parameters.split(','))
-        if ret:
-            break
+    while g is not None:
+        for r in g.rule_set.all():
+            f = getattr(rules, r.method, None)
+            if f is None:
+                continue
+            if f(date, *r.parameters.split(',')):
+                return True
+        g = g.parent
 
-    return ret
+    return False
