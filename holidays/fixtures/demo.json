@@ -10,22 +10,12 @@
 {
     "fields": {
         "group": "PT",
-        "description": "Natal",
-        "parameters": "25,12",
-        "method": "fixed_date"
-    },
-    "model": "holidays.rule",
-    "pk": 1
-},
-{
-    "fields": {
-        "group": "PT",
         "description": "Dia de Ano Novo",
         "parameters": "1,1",
         "method": "fixed_date"
     },
     "model": "holidays.rule",
-    "pk": 2
+    "pk": 1
 },
 {
     "fields": {
@@ -35,7 +25,7 @@
         "method": "fixed_date"
     },
     "model": "holidays.rule",
-    "pk": 3
+    "pk": 2
 },
 {
     "fields": {
@@ -45,7 +35,7 @@
         "method": "fixed_date"
     },
     "model": "holidays.rule",
-    "pk": 7
+    "pk": 3
 },
 {
     "fields": {
@@ -76,6 +66,16 @@
     },
     "model": "holidays.rule",
     "pk": 6
+},
+{
+    "fields": {
+        "group": "PT",
+        "description": "Natal",
+        "parameters": "25,12",
+        "method": "fixed_date"
+    },
+    "model": "holidays.rule",
+    "pk": 7
 },
 {
     "fields": {
